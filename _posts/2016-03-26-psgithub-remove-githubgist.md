@@ -4,9 +4,7 @@ title:  "Added Remove-GitHubGist Cmdlet to PSGitHub PowerShell Module."
 date:   2016-03-24 01:34:00 -0400
 categories: PowerShell
 tags:
-- PowerShell
 - Blog
-- Post
 ---
 
 Added some more functionality to the Gist cmdlets in [PSGitHub PowerShell Module](http://pcgeek86.github.io/PSGitHub/).  Currently the following Gist cmdlets exist in the module:

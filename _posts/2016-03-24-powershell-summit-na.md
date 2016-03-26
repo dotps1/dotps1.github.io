@@ -6,7 +6,6 @@ categories: PowerShell
 tags:
 - News
 - Blog
-- Post
 ---
 
 The PowerShell Summit NA 2016 is just over a week away, and I am getting very excited to go.  It will be a much-needed vacation, not to mention seeing some great people from the PowerShell Community.
