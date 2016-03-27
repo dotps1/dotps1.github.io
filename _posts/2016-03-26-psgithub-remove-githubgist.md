@@ -35,4 +35,4 @@ Get-GitHubGist -Id 123456abcdef | Remove-GitHubGist -Confirm:$false
 Remove-GitHubGist -Id 123456abcdef -FileName File2.ps1, File3.ps1 -Confirm:$false
 ```
 
-This module is coming along nicely.  Thanks to [Trevor Sullivin @pcgeek86](https://trevorsullivan.net) for allwoing me to be a part of it.  Really enjoying the collaboration.
+This module is coming along nicely.  Thanks to [Trevor Sullivin @pcgeek86](https://trevorsullivan.net) for allowing me to be a part of it.  Really enjoying the collaboration.
