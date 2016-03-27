@@ -5,16 +5,19 @@ date:   2016-03-26 01:00:00 -0400
 categories: PowerShell
 tags:
 - Blog
+- PowerShell Module
 ---
 
-Added some more functionality to the Gist cmdlets in **[PSGitHub PowerShell Module](http://pcgeek86.github.io/PSGitHub/)**.  Currently the following Gist cmdlets exist in the module:
+Added some more functionality to the Gist cmdlets in **[PSGitHub PowerShell Module](http://pcgeek86.github.io/PSGitHub/)**.  Currently the following Gist cmdlets exist in the module with much more functionality to come:
+
 - Get-GitHubGist
 - New-GitHubGist
 - Save-GitHubGist
+- Set-GitHubGist
 - Remove-GitHubGist
 
-Today I added the `Remove-GitHubGist` cmdlet.  This cmdlet is a little invasive with its default param set, it will remove the entire Gist, commits, comments, files, everything.
-My thoughts are to add other param sets, allow to remove files only, commits to possibly.
+Today I added the `Remove-GitHubGist` cmdlet to the module.  This cmdlet is a little invasive with its default param set, it will remove the entire Gist, commits, comments, files, everything.
+However, you can also use the `-FileName` parameter to specify one or more files to delete from a specified Gist.
 
 Here is some examples of using these cmdlets.  (The `Set-GitHubToken` cmdlet needs to be run first before any other cmdlet in this module can be used).
 
