@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Added Remove-GitHubGist Cmdlet to PSGitHub PowerShell Module."
-date:   2016-03-24 01:34:00 -0400
+date:   2016-03-26 01:00:00 -0400
 categories: PowerShell
 tags:
 - Blog
@@ -28,6 +28,11 @@ Remove-GitHubGist -Id $gist.Id -Confirm:$false
 ```PowerShell
 # Example 2
 Get-GitHubGist -Id 123456abcdef | Remove-GitHubGist -Confirm:$false
+```
+
+```PowerShell
+# Example 3
+Remove-GitHubGist -Id 123456abcdef -FileName File2.ps1, File3.ps1 -Confirm:$false
 ```
 
 This module is coming along nicely.  Thanks to [Trevor Sullivin @pcgeek86](https://trevorsullivan.net) for allwoing me to be a part of it.  Really enjoying the collaboration.
