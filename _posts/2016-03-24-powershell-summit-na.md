@@ -16,5 +16,5 @@ The Summit will be held in Bellevue Washington this year, same as 2014.  Last ye
 
 Here are some useful links if you are interested in the Summit:
 
-- [PowerShell.org](http://powershell.org/wp/summit/)
-- [Eventmgr](https://eventmgr.azurewebsites.net/event/home/PSNA16)
+- **[PowerShell.org](http://powershell.org/wp/summit/)**
+- **[Eventmgr](https://eventmgr.azurewebsites.net/event/home/PSNA16)**

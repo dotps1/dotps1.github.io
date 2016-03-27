@@ -7,7 +7,7 @@ tags:
 - Blog
 ---
 
-Added some more functionality to the Gist cmdlets in [PSGitHub PowerShell Module](http://pcgeek86.github.io/PSGitHub/).  Currently the following Gist cmdlets exist in the module:
+Added some more functionality to the Gist cmdlets in **[PSGitHub PowerShell Module](http://pcgeek86.github.io/PSGitHub/)**.  Currently the following Gist cmdlets exist in the module:
 - Get-GitHubGist
 - New-GitHubGist
 - Save-GitHubGist
@@ -31,4 +31,4 @@ Get-GitHubGist -Id 123456abcdef | Remove-GitHubGist -Confirm:$false
 Remove-GitHubGist -Id 123456abcdef -FileName File2.ps1, File3.ps1 -Confirm:$false
 ```
 
-This module is coming along nicely.  Thanks to [Trevor Sullivin @pcgeek86](https://trevorsullivan.net) for allowing me to be a part of it.  Really enjoying the collaboration.
+This module is coming along nicely.  Thanks to **[Trevor Sullivin @pcgeek86](https://trevorsullivan.net)** for allowing me to be a part of it.  Really enjoying the collaboration.
