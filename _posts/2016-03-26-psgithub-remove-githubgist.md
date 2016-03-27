@@ -20,7 +20,7 @@ Here is some examples of using these cmdlets.  (The `Set-GitHubToken` cmdlet nee
 
 ```powershell
 # Example 1
-$gist = New-GitHubGist -File .\Test-File.ps1 -Description 'Testing the delete Gist function.' -Public
+$gist = New-GitHubGist -File .\Test-File.ps1 -Description 'Testing Gist' -Public
 
 Remove-GitHubGist -Id $gist.Id -Confirm:$false
 
