@@ -29,7 +29,7 @@ $gist = New-GitHubGist -File .\Test-File.ps1 -Description 'Testing Gist' -Public
 Remove-GitHubGist -Id $gist.Id -Confirm:$false
 
 # Example 2
-# Remote the entire Gist.
+# Remove the entire Gist.
 Get-GitHubGist -Id 123456abcdef | Remove-GitHubGist -Confirm:$false
 
 # Example 3
