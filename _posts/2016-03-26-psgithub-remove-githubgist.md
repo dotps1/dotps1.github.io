@@ -23,14 +23,10 @@ Here is some examples of using these cmdlets.  (The `Set-GitHubToken` cmdlet nee
 $gist = New-GitHubGist -File .\Test-File.ps1 -Description 'Testing the delete Gist function.' -Public
 
 Remove-GitHubGist -Id $gist.Id -Confirm:$false
-```
 
-```PowerShell
 # Example 2
 Get-GitHubGist -Id 123456abcdef | Remove-GitHubGist -Confirm:$false
-```
 
-```PowerShell
 # Example 3
 Remove-GitHubGist -Id 123456abcdef -FileName File2.ps1, File3.ps1 -Confirm:$false
 ```
