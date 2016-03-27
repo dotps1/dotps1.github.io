@@ -18,7 +18,7 @@ My thoughts are to add other param sets, allow to remove files only, commits to 
 
 Here is some examples of using these cmdlets.  (The `Set-GitHubToken` cmdlet needs to be run first before any other cmdlet in this module can be used).
 
-```PowerShell
+```powershell
 # Example 1
 $gist = New-GitHubGist -File .\Test-File.ps1 -Description 'Testing the delete Gist function.' -Public
 
