@@ -190,6 +190,10 @@ $gist.Owner.AvatarUrl
 ```
 
 This all had to be done with the files, history, forks and so forth.  
+You may ask, why would we do this and not just use the json object?  
+Well, using this we can now have cmdlet parameter sets based on input object type.  
+And this will help with formatting in ps1xml, else it would be hard to differentiate multipule `System.Object`'s.
+
 It was very fun, I still have more to do, but I wanted to share my inital usage of classes.
 
 You can find all my progress on this project on [GitHub](https://github.com/dotps1/PSGitHub).
