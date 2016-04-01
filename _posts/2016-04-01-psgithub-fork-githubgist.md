@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "PSGitHub Fork-GitHubGist"
-date:   2016-04-01 10:00:00 -0400
+title:  "PSGitHub Fork-GitHubGist."
+date:   2016-04-01 09:00:00 -0400
 categories: PowerShell
 ---
 
