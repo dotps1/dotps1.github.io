@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "My first impressions of Classes in PowerShell v5."
-date:   2016-03-26 01:00:00 -0400
+date:   2016-03-31 17:00:00 -0400
 categories: PowerShell
 ---
 
