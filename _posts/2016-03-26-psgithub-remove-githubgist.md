@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Added Remove-GitHubGist Cmdlet to PSGitHub PowerShell Module."
-date:   2016-03-26 01:00:00 -0400
+title: "Added Remove-GitHubGist Cmdlet to PSGitHub PowerShell Module"
+date: 2016-03-26 01:00:00 -0400
 categories: PowerShell
 ---
 

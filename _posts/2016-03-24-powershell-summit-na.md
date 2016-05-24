@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "PowerShell Summit NA just over a week away!"
-date:   2016-03-24 01:34:00 -0400
+title: "PowerShell Summit NA just over a week away"
+date: 2016-03-24 01:34:00 -0400
 categories: PowerShell
 ---
 
