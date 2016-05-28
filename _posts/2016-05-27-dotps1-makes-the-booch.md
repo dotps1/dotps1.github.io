@@ -7,4 +7,4 @@ categories: Kombucha, Booch, Probiotics
 
 So, this is going to be a short blog post, because I made a video!  This is how I (dotps1) makes the booch!
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/MMJdFT4Q3Qw" frameborder="0" allowfullscreen></iframe>
+<div align="center"><iframe align="middle" width="420" height="315" src="https://www.youtube.com/embed/MMJdFT4Q3Qw" frameborder="0" allowfullscreen></iframe></div>
