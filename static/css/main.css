@@ -186,3 +186,7 @@ div.footer{
   padding-bottom: 15px;
   
 }*/
+
+/* Force the scroll bar so there is no page shift. */
+html { min-height: 100%; margin-bottom: 1px; }
+html { overflow: -moz-scrollbars-vertical !important; }
