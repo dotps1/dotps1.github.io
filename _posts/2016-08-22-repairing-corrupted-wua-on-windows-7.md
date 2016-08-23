@@ -54,6 +54,7 @@ I ran the KB3020369.msu and it worked!  And fast, didn't even have to reboot!  I
 after it came back up, I pushed updates to it, and like magic, its updating, and fast!  pushed 90+ updates in under an hour.
 
 So to break it all down, here is the order to fix everything:
+
 1. Disable the LogMeIn Patch Management (if applicable).
 2. Make sure there are no GPOs messing with your Windows Update settings (if applicable).
 3. Reset the WUA.
