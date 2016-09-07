@@ -57,9 +57,24 @@ So to break it all down, here is the order to fix everything:
 
 1. Disable the LogMeIn Patch Management (if applicable).
 2. Make sure there are no GPOs messing with your Windows Update settings (if applicable).
-3. Reset the WUA.
+3. Reset the WUA (_See update below_).
 4. Install KB3020369.
 5. Install KB3172605.
 
-And lastly, running the Microsoft FixIt on these machines manually is not very ideal, so, here is a PowerShell script to do it for you _of course_.
-<script src="https://gist.github.com/dotps1/8abb564c6dbfb1b768354b39ede033da.js"></script>
+And lastly, running the Microsoft FixIt on these machines manually is not very ideal, so, here is a PowerShell script to do it for you, it can be found [here](https://gist.github.com/dotps1/8abb564c6dbfb1b768354b39ede033da).
+
+---
+
+**Update (2016/09/07)**
+
+After some more troubleshooting with this, I found that reseting the WUA didn't _always_ work, it did most of the time, but not _all_ the time. 
+So after some more digging, I found that applying the updates with DISM seem to do the trick.
+Here is what you need to pull it off
+
+1. First download the update, KB3020369 or KB3172605.
+2. Expand the update to get the .cab file out of it, `expand -f:* <PathToKBmsu> <PathToExtractTo>`
+3. Install the .cab with DISM: `DISM.exe /Online /Add-Package /PackagePath:<PathToExtractedCab> /Quiet /NoRestart`
+
+And lastly, if you are using LabTech, here is a [Zip Package](https://onedrive.live.com/download?cid=E508E6CF25AFDF2F&resid=E508E6CF25AFDF2F%2113017&authkey=AIS8r_1nduYQZDY) with all the files you need to pull this all off!
+
+Hope this helps, and good luck!
