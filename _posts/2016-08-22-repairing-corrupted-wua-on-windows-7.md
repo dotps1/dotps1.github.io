@@ -75,6 +75,6 @@ Here is what you need to pull it off
 2. Expand the update to get the .cab file out of it, `expand -f:* <PathToKBmsu> <PathToExtractTo>`
 3. Install the .cab with DISM: `DISM.exe /Online /Add-Package /PackagePath:<PathToExtractedCab> /Quiet /NoRestart`
 
-And lastly, if you are using LabTech, here is a [Zip Package](https://onedrive.live.com/download?cid=E508E6CF25AFDF2F&resid=E508E6CF25AFDF2F%2113017&authkey=AIS8r_1nduYQZDY) with all the files you need to pull this all off!
+And lastly, if you are using LabTech, here is a [Zip Package](https://onedrive.live.com/download?cid=E508E6CF25AFDF2F&resid=E508E6CF25AFDF2F%2113032&authkey=AO8zK2whHWr1MTY) with all the files you need to pull this all off!
 
 Hope this helps, and good luck!
