@@ -97,7 +97,7 @@ I couldn't remotly access the machines, and a machine with no console that canno
 When I accessed the Recover Console, I went into the Firewall section, and nothing, not a single firewall exception, great. 
 After about 5 seconds of research, I found out there is a switch for the `New-NanoServerImage` cmdlet, `-EnableRemoteManagmentPort`. 
 Basically, this enables WinRM and opens the firewall for remote manamgment, this is a completely headless server, how is this not a default option.....? 
-Ok, well, I'm building with SCCM, basically using DISM for everything, how am I going to run `winrm /qc` on an unmounted wim.......? 
+Ok, well, I'm building with SCCM, basically using DISM for everything, how am I going to run `winrm qc` on an unmounted wim.......? 
 Right, I'm not. 
 Great, well, if that cmdlet can do it, there has to be a way to do it right? 
 Well, the `NanoServerImageGenerator` PowerShell module is a .psm1, so I opened it up and started digging, and to simplify it all down, it is adding a batch script that runs at first start up that is setting up the Firewall for WinRM:
