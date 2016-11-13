@@ -35,7 +35,7 @@ Where:
 * -TargetPath specifies a path, including the filename and extension, where the resulting WIM will be created. 
 * -ComputerName is the computer name for the Nano Server you are creating.
 
-Now, as you may can see right away with this method, there is more then a few problem.
+Now, as you may can see right away with this method, there is more then a few problems.
 
 * You can see that Edition is static in the out WIM file, "Standard", what if I wanted some Datacenter too, That would already be two WIMs to maintain.
 * The DeploymentType, The options are Host,Guest, now with nested virtualization, I would most likely want this option dynamic, either Host or Guest, so this would mean two more WIMs to keep well 4 now.
