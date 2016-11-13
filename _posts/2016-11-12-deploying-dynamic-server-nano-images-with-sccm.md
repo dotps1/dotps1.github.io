@@ -78,9 +78,11 @@ I then created a Task Sequence that foramted and partioned the disk, and then la
 I did a quick test build on a VM and did a quick test build, it worked just fine, but a base Nano image with no remoting capabilities and no features is pretty usless.
 Next I took the entire `Package` directory from the Server 2016 media, and just packaged it right up in SCCM, its only like 100 MB, so why not!
 I then added a task sequence step using that package to add the Compute package (Hyper-V):
+
 ```
 cmd.exe /C Dism.exe /image:C:\ /Add-Package /PackagePath:Microsoft-NanoServer-Compute-Package.cab /PackagePath:en-US\Microsoft-NanoServer-Compute-Package_en-US.cab
 ```
+
 So, there is the Package: `Microsoft-NanoServer-Compute-Package.cab`, but there is also the Lang package in the `en-US` folder: `en-US\Microsoft-NanoServer-Compute-Package_en-US.cab`, not sure if both is needed, but I add both.
 did another build, and then when I signed into the Recovery Console I could see the VM section, works awesome.
 
