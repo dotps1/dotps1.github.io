@@ -46,6 +46,8 @@ And how ever many you think you will need, it will be doubled if you need a Stan
 
 And there are many many different packages you can install and im sure more will come:
 
+---
+
 | Role or feature | PowerShell Parameter Option |
 |:----------------|----------------------------:|
 | Hyper-V role (including NetQoS) | -Compute |
