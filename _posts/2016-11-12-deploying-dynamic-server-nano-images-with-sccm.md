@@ -65,6 +65,8 @@ And there are many many different packages you can install and im sure more will
 | Secure Startup | -Package Microsoft-NanoServer-SecureStartup-Package |
 | Sheilded VM<br>(Note: This package is only available for the Datacenter edition of Nano Server) | -Package Microsoft-NanoServer-ShieldedVM-Package |
 
+---
+
 And that is just the Features, there are many other arguments you can pass when building the WIM, such as copying files to the image and first run setup scripts. 
 Anyway, lets dive into my experiense with this.
 
