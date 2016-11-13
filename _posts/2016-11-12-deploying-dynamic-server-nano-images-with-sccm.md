@@ -44,7 +44,7 @@ Now, as you may can see right away with this method, there is more then a few pr
 I think you can already see where this is going and why a more dynamic build setup is needed if your plan to deploy more then one configuration of Nano, else your going to have to maintain many WIM files (more then 1 is too many in my opinion). 
 And how ever many you think you will need, it will be doubled if you need a Standard and Datacenter edition of each.
 
-And there are many many different packages you can install and im sure more will come:
+And there are many many different packages you can install and I'm sure more will come:
 
 ---
 
