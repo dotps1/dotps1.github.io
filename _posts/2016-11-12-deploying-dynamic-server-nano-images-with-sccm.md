@@ -103,8 +103,12 @@ Great, well, if that cmdlet can do it, there has to be a way to do it right?
 Well, the `NanoServerImageGenerator` PowerShell module is a .psm1, so I opened it up and started digging, and to simplify it all down, it is adding a batch script that runs at first start up that is setting up the Firewall for WinRM:
 
 ```batch
+:Add WinRM Firewall Rules.
 netsh advfirewall firewall add rule name="WinRM 5985" protocol=TCP dir=in localport=5985 profile=any action=allow
 netsh advfirewall firewall set rule group="@FirewallAPI.dll,-29252" new enable=Yes
+
+:Set High Performacne Power Scheme.
+powercfg /SetActive 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
 ```
 
 There is a lot of other stuff going on at this point, like if you add startup commands, it's adding to this batch file, but if you are just using the `-EnableRemoteManagmentPort`, then this is what its doing. 
