@@ -3,6 +3,7 @@ layout: post
 title: Deploying Dynamic Server Nano Images with SCCM
 date: 2016-11-12 17:30:00 -0400
 categories: SCCM, Server, Nano, WinPE
+comments: true
 ---
 
 So, its been a while since my last blog post. 

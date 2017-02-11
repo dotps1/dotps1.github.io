@@ -3,6 +3,7 @@ layout: post
 title: "PowerShell Summit NA just over a week away"
 date: 2016-03-24 01:34:00 -0400
 categories: PowerShell
+comments: true
 ---
 
 The PowerShell Summit NA 2016 is just over a week away, and I am getting very excited to go.  It will be a much-needed vacation, not to mention seeing some great people from the PowerShell Community.

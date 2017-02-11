@@ -3,6 +3,7 @@ layout: post
 title: Repairing Corrupted WUA on Windows 7
 date: 2016-08-22 09:30:00 -0400
 categories: WindowsUpdate, LabTech, Windows7
+comments: true
 ---
 
 This article is an expansion on from my last blog post: [LogMeIn Breaks Patching With LabTech](http://dotps1.github.io/logmein-breaks-patching-with-labtech.html).  After
