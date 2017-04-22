@@ -92,7 +92,7 @@ Party on Wayne.
 
 ---
 
-### Lets break it down
+### Lets break it down...
 
 Question: "How do I fix my Windows Server 2016 DSC Pull Server from generating 100 million edbTEMP0.log files?"
 
