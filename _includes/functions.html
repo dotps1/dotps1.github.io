@@ -1,65 +1,48 @@
 <section id="functions">
     <div class="container">
         <h3>Functions</h3>
-        <h5>A collection of functions I have personally developed to overcome situations I have encountered.</h5>
+        <h5>A collection of functions I have personally developed to overcome situations I have encountered  (This page has been updated to only include Script Functions published to the PSGallery, sorry TechNet, but you can't beat 'Install-Script').</h5>
         <div class="panel panel-default">
             <div class="panel-body">
                 <hr />
                 <h5>
                     <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://www.powershellgallery.com/packages/ConvertTo-ShortPath">ConvertTo-ShortPath</a></strong>
-                    - Converts a file or folder path to the MS DOS 8.3 short path equivilent.
+                    - Converts each element of a file object path to the 8.3 path and return the short path string.
                 </h5>
                 <h5>
-                    <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://gallery.technet.microsoft.com/Export-AclToCsv-918f8912">Export-AclToCsv</a></strong>
-                    - Exports the Acl Object for files and or folders to an easy readable csv, helps to 'show' what the permission hiearchy truly is.
-                </h5>
-                <h5>
-                    <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://gallery.technet.microsoft.com/Get-ADObjectWithLinkedGPO-272f7724">Get-ADObjectWithLinkedGPO</a></strong>
-                    - Gets all objects through out a domain that have a particular Group Policy Object applied to it. This can be filtered to return Computers, Group, or Users Objects only.
-                </h5>
-                <h5>
-                    <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://www.powershellgallery.com/packages/Get-LastLoggedOnUser">Get-LastLoggedOnUser</a></strong>
-                    - Returns a PSCustomObject of the last logged on user or currently logged on user from an accessable workstation.
-                </h5>
-                <h5>
-                    <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://gallery.technet.microsoft.com/Get-SqlEdition-09262feb">Get-SqlEdition</a></strong>
-                    - Returns all instance and edition types of SQL from a machine.
-                </h5>
-                <h5>
-                    <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://gallery.technet.microsoft.com/Get-UnEncryptedWorkstations-c4837ba0">Get-UnEncryptedWorkstationsFromCMDB</a></strong>
-                    - Returns a collection of CIs that are not encrypted from the Microsoft System Center Configuration Manager database.
-                </h5>
-                <h5>
-                    <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://gallery.technet.microsoft.com/Remotly-execute-Sophos-9a0de908">Invoke-SophosReinit</a></strong>
-                    - Used to remotly execute the Sophos Reinit, namely to point clients to a Managment Server.
-                </h5>
-                <h5>
-                    <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://www.powershellgallery.com/packages/Test-Credential">Test-Credential</a></strong>
-                    - Returns a bool repsentation of a PSCredential objects validity.
-                </h5>
-                <h5>
-                    <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://gallery.technet.microsoft.com/Update-NetworkPrinterServer-36015362">Update-NetworkPrinterServerConnection</a></strong>
-                    - Updates the Print Server connection info of network printer mappings.  Useful when replaceing print servers.
+                    <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://www.powershellgallery.com/packages/Find-NthIndexOf">Find-NthIndexOf</a></strong>
+                    - Finds the nth index of a char in a string, returns -1 if the char does not exist, or if nth is out of range.
                 </h5>
                 <h5>
                     <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://www.powershellgallery.com/packages/Get-ADComputerSiteName">Get-ADComputerSiteName</a></strong>
-                    - Gets the AD Site name associated to a computer.
+                    - Queries DNS to get the computers IPAddress then, returns the ADSiteName base on AD Sites and Services.
                 </h5>
                 <h5>
-                    <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://www.powershellgallery.com/packages/New-Username">New-Username</a></strong>
-                    - Creates a new Active Directory based user name.
+                    <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://www.powershellgallery.com/packages/Get-ItemExtendedAttribute">Get-ItemExtendedAttribute</a></strong>
+                    - Get extended item metadeta attribute value from an item using COM and referenced by attribute number.
                 </h5>
                 <h5>
-                    <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://www.powershellgallery.com/packages/Get-MsiProductCode">Get-MsiProductCode</a></strong>
-                    - Opens a Windows Installer Database (.msi) and querys for the product code.
+                    <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://www.powershellgallery.com/packages/Get-MsiPropertyValue">Get-MsiPropertyValue</a></strong>
+                    - Opens a Windows Installer Database (.msi) and queries for the specified property value.
                 </h5>
                 <h5>
-                    <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://www.powershellgallery.com/packages/Get-DnsConfiguration">Get-DnsConfiguration</a></strong>
-                    - Retrives primary, secondary, tertiery DNS Servers from on online system using Windows Management Instrimentation.
-                </h5>
-                <h5>
-                    <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://gist.github.com/dotps1/c0be2b49823a8ff152253158e8744302">Get-ProgramUninstallString</a></strong>
+                    <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://www.powershellgallery.com/packages/Get-ProgramUninstallString">Get-ProgramUninstallString</a></strong>
                     - Gets the uninstall string for a program, can be filtered to a key word of the programs display name.
+                </h5>
+                <h5>
+                    <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://www.powershellgallery.com/packages/New-ADUserName">Get-ADUserName</a></strong>
+                    - Create a new username with the following order until a unique Username is found. <br />
+                    1. First Initial Last Name. <br />
+                    2. First Initial First Middle Initial Last Name. <br />
+                    3. Iterates First Name adding each Char until a unique Username is found. <br />
+                </h5>
+                <h5>
+                    <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://www.powershellgallery.com/packages/New-NetStaticIPAddress">New-NetStaticIPAddress</a></strong>
+                    - Removes the current NetIPAddress and NetRoute on a given NetAdapter.  Sets a new Static NetIPAddress and adds DNS Server values if provided.
+                </h5>
+                <h5>
+                    <i class="fa fa-terminal"></i>&nbsp;&nbsp;<strong><a href="https://www.powershellgallery.com/packages/Test-Credential">Test-Credential</a></strong>
+                    - Simulates an Authentication Request in a Domain envrionment using a PSCredential Object. Returns $true if both Username and Password pair are valid.
                 </h5>
             </div>
         </div>
