@@ -1,9 +1,9 @@
 ---
 layout: post
+section-type: post
 title: dotps1 Makes The Booch
 date: 2016-05-27 22:30:00 -0400
 categories: Kombucha, Booch, Probiotics
-comments: true
 ---
 
 So, this is going to be a short blog post, because I made a video!  This is how I (dotps1) makes the booch!

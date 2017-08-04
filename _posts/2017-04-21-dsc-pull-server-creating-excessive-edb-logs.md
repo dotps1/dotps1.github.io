@@ -1,9 +1,9 @@
 ---
 layout: post
+section-type: post
 title: "DSC Pull Server Creating Excessive edb Logs"
 date: 2017-04-21 19:30:00 -0400
 categories: PowerShell, DSC
-comments: true
 ---
 
 ### The prodigal son returns...
@@ -57,7 +57,6 @@ Now, I remember a couple of months past, I had built some Windows Server 2016 bo
 Ok, ok, so I guess I'll abide this _Warning_, `Get-WUServiceManager`
 
 ```
-
 ServiceID                            IsManaged IsDefault Name
 ---------                            --------- --------- ----
 855e8a7c-ecb4-4ca3-b045-1dfa50104289 False     False     Windows Store (DCat Prod)

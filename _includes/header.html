@@ -1,16 +1,26 @@
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="{{ site.baseurl }}/"><i class="fa fa-home"></i></a>
-    </div>
-    <div id="navbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="{{ site.baseurl }}blog.html">BLOG</a></li>
-        <li><a href="{{ site.baseurl }}projects.html">PROJECTS</a></li>
-        <li><a href="{{ site.baseurl }}scripts.html">SCRIPTS</a></li>
-        <li><a href="{{ site.baseurl }}functions.html">FUNCTIONS</a></li>
-        <li><a href="{{ site.baseurl }}resume.html">RESUME</a></li>
-      </ul>
+
+<!-- Intro Start -->
+
+<header class="intro">
+  <div class="intro-body">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <h1 class="brand-heading">&nbsp;</h1>
+            <h1 class="brand-heading">&nbsp;</h1>
+            <span class="intro-text">{{ content }}</span>
+            <h5>&nbsp;</h5>
+            <a href="#{{ site.pages_list['About'] }}" class="page-scroll">
+              {% if site.me-img contains "https://" %}
+                <img class="img-me" src="{{ site.me-img }}" alt="">
+              {% else %}
+                <img class="img-me" src="{{site.baseurl}}{{ site.me-img }}" alt="">
+              {% endif %}
+            </a>
+          </div>
+        </div>
     </div>
   </div>
-</nav>
+</header>
+
+<!-- Intro End -->

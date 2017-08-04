@@ -1,10 +1,19 @@
-# Jekyll build
-/_site/
-.jekyll-metadata
-Gemfile.lock
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
 
-# webstorm
-.idea/
-
-# others
+_site/
+.sass-cache/
 *.swp
+pkg/
+test/
+_deploy/*
+Rakefile
+.jekyll-metadata
+/.idea/
