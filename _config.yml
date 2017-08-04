@@ -135,7 +135,7 @@ syntax-highlight: True
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Just a beer drinking PowerShell-er, automating things as I go."
+author_blurb: "Just a beer drinking PowerShell-er, automating daily tasks as I go.  And sometimes I go outside and ride my bike."
 author_blurb_image: "/img/author.png"
 
 ##################

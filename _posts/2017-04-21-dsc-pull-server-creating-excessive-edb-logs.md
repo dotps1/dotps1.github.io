@@ -120,7 +120,7 @@ Well........
 * `Get-Item  -Path C:\Windows\System32\WindowsPowerShell\v1.0\Modules\PSDesiredStateConfiguration\PullServer\Microsoft.Powershell.DesiredStateConfiguration.Service.dll | Select-Object -ExpandProperty VersionInfo | Select-Object -ExpandProperty ProductVersion`
 * 10.0.14393.479
 * Update dlls in virtual directory.
-* Reboot the machine (probably just need to restar the AppPool).
+* Reboot the machine (probably just need to restart the AppPool).
 * Accept there will still be edb temp logs, but they will be managed.
 * Open and consume well deserved beer.
 * Repeat previous step.
