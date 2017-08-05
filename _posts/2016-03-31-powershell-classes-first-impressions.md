@@ -3,7 +3,6 @@ layout: post
 section-type: post
 title: "My first impressions of Classes in PowerShell v5"
 date: 2016-03-31 17:00:00 -0400
-categories: PowerShell
 ---
 
 So, last night I began working on the Gist Object Model in the [PSGitHub](http://pcgeek86.github.io/PSGitHub) PowerShell Module, and this means, working with classes.  

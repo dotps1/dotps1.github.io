@@ -3,7 +3,6 @@ layout: post
 section-type: post
 title: LogMeIn Breaks Patching With LabTech
 date: 2016-06-10 10:00:00 -0400
-categories: WindowsUpdate, LabTech
 ---
 
 I recently accepted and moved in to a new role, and one of my first tasks was to figure out why patching was failing on clients.

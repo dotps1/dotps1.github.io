@@ -3,7 +3,6 @@ layout: post
 section-type: post
 title: "Automate Java SCCM Application Creation"
 date: 2016-04-21 10:00:00 -0400
-categories: SCCM
 ---
 
 **Overview**
