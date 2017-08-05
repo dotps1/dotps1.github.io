@@ -135,8 +135,8 @@ syntax-highlight: True
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "Just a beer drinking PowerShell-er, automating daily tasks as I go.  And sometimes I go outside and ride my bike."
-author_blurb_image: "/img/author.png"
+author_blurb: "Just a beer drinking Github-er, automating daily tasks with PowerShell, or whatever.  And sometimes I go outside and ride my bike.  But mostly I just drink beer."
+author_blurb_image: "/img/homercat.png"
 
 ##################
 # Social Buttons #
@@ -170,7 +170,7 @@ social:
 # 404 page #
 ############
 
-err-404-img: "/img/author.png"
+err-404-img: "/img/homercat.png"
 
 ##################
 # GPG on Keybase #
