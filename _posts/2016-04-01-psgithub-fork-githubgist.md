@@ -3,6 +3,7 @@ layout: post
 section-type: post
 title: "PSGitHub Fork-GitHubGist"
 date: 2016-04-01 09:00:00 -0400
+category: powershell
 ---
 
 Last night I committed the [PSGitHub](http://github.com/dotps1/PSGitHub) repo, the `Fork-GitHubGist` cmdlet.  I know what your thinking, `Fork` is not an [approved verb](https://msdn.microsoft.com/en-us/library/ms714428(v=vs.85).aspx),

@@ -3,6 +3,7 @@ layout: post
 section-type: post
 title: "DSC Pull Server Creating Excessive edb Logs"
 date: 2017-04-21 19:30:00 -0400
+category: powershell
 ---
 
 ### The prodigal son returns...

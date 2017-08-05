@@ -3,6 +3,7 @@ layout: post
 section-type: post
 title: "PowerShell + DevOps Global Summit Scholarship"
 date: 2017-08-03 12:00:00 -0400
+category: powershell
 ---
 
 As automation grows in the IT workplace, it maybe be growing to fast for a lot of folks to keep up with.  PowerShell is taking over the Windows World, and now is moving into the UNIX and Mac spaces as well.  I have attended the [PowerShell + DevOps Global Summit](http://powershellsummit.org/) three out of the five years it has been running, and it has some of the best content of any conference I have had the pleasure of being part of.  That being said, the great people at [PowerShell.org](https://powershell.org) have come up with a great idea of giving scholarships to a few fine deserving individuals so they can attend the Summit if they maybe struggling to find administrative approval.
