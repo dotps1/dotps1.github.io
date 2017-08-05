@@ -460,6 +460,6 @@ body {
 }
 
 .highlighter-rouge {
-    color: #8cc4d8;
-    background-color: #333333;
+    color: $codeblock-font-color;
+    background-color: $codeblock-background-color;
 }
