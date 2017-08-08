@@ -2,7 +2,6 @@
 layout: post
 section-type: post
 title: dotps1 Makes The Booch
-date: 2016-05-27 22:30:00 -0400
 category: miscellaneous
 ---
 

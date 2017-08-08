@@ -2,7 +2,6 @@
 layout: post
 section-type: post
 title: LogMeIn Breaks Patching With LabTech
-date: 2016-06-10 10:00:00 -0400
 category: labtech
 ---
 

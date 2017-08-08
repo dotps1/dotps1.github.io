@@ -2,7 +2,6 @@
 layout: post
 section-type: post
 title: "PowerShell + DevOps Global Summit Scholarship"
-date: 2017-08-03 12:00:00 -0400
 category: powershell
 ---
 

@@ -2,7 +2,6 @@
 layout: post
 section-type: post
 title: "PSGitHub Fork-GitHubGist"
-date: 2016-04-01 09:00:00 -0400
 category: powershell
 ---
 

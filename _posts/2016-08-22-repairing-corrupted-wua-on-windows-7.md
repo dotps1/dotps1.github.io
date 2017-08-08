@@ -2,7 +2,6 @@
 layout: post
 section-type: post
 title: Repairing Corrupted WUA on Windows 7
-date: 2016-08-22 09:30:00 -0400
 category: powershell
 ---
 
