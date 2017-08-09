@@ -43,7 +43,7 @@ That will find the drives and give the disk number in the format of `PD<Int>`, I
 The `--fmtpinfo=0 --pfu=0` removes the drive protection if there is any.  Now, one downfall to using PSJobs, is that you cannot see the status of the format, but you can retrieve some data in two ways
 
 1. `Get-Job -Status Running`.  This will tell you how many drives are still formating, but not give you the percentage.
-2. `.\sg_format PD<Int>`.  Run the format executable with no arguments, but specify a drive and you can see the status.
+2. `.\sg_format -v PD<Int>`.  Run the format executable with no arguments but `-v` which is for verbose output.
 
 So, after a few hours, after all the drives had completed, I was able to run `Get-PhysicalDisk` and actually see all the drives.  However, they where still all `CanPool: False`.  I dug in a little bit deeper, `Get-PhysicalDisk | ? BusType -eq "SAS" | select -First 1 *` (I used the bus type for the filter because my boot drive was a RAID).  The output will have a `CannotPoolReason` property, and its value was _Insufficient Capacity_.  What, its 900GB, the minimum requirement for a drive to be part of a storage pool, is 4GB.  After a quick search, it appears that if the disk has any RAID/Storage Pool/MBR/etc info on it, this error will occur.  But there is a cmdlet to help fix it, `Reset-PhysicalDisk`.  So I ran the following: `Get-PhysicalDisk | ? BustType -eq "SAS" | Reset-PhysicalDisk`.  Took a few minutes, but after it completed, I ran `Get-PhysicalDisk` and all the drives could be pooled!  Success!
 
