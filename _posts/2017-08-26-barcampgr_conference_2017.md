@@ -11,8 +11,10 @@ I personally did a session on getting started with Jekyll and GitHub Pages.  It 
 
 ---
 
+### Outline
 <script src="https://gist.github.com/dotps1/f6c156c3a15bd5ea6d7b7f5e79780f55.js"></script>
 
 <hr />
 
+### Session Recording
 <div align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/MRNFmW9IfsM" frameborder="0" allowfullscreen></iframe></div>
