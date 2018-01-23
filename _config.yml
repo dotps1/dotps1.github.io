@@ -31,7 +31,7 @@ force-https: True
 lang: "en"
 author: "Thomas Malkewitz"
 title: "{ dotps1 }"
-description: "Blog and website of Thomas Malkewitz @dotps1, blogging mainly for tech. Opinions expressed are my own."
+description: "Blog and website of Thomas Malkewitz @dotps1, blogging mainly for tech and homebrewing. Opinions expressed are my own."
 keywords: "thomas, malkewitz, powershell, dotps1"
 favicon: "/img/favicon.ico"
 
@@ -163,6 +163,8 @@ social:
     url: "https://steamcommunity.com/id/dotps1"
   - title: "twitch"
     url: "https://www.twitch.tv/dotps1"
+  - title: "beer"
+    url: "https://taplist.io/taplist-963267"
   - title: "envelope"
     url: "mailto:thomas.malkewitz+dotps1@gmail.com"
   - title: "rss"
