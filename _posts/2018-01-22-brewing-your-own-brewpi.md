@@ -136,5 +136,4 @@ If you'd made it this far, congratulations, you're almost done, and its almost t
 5. Wack enter again to confirm.
 6. Say `n` (no) to check for the firmware you already did this with when you flashed the hex file to the Arduino Uno.
 
-Now if you go back to the web interface, in the top right, the script will be _running_ (this may take a few minutes).
-
+Now if you go back to the web interface, in the top right, the script will be _running_ (this may take a few minutes).  Now, the only thing left to do is identify and configure your temperature probes, to do this go to the maintenance panel (top right).
