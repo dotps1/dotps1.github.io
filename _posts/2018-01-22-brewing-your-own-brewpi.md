@@ -62,8 +62,13 @@ Now, the install will take about 10 minutes, while it is going, go ahead and plu
 * [BrewPi 2.10 Arduino Uno Rev C Firmware](https://github.com/BrewPi/firmware/releases/download/0.2.10/brewpi-arduino-uno-revC-0_2_10.hex)
 * [Arduino Sketch Uploader 3.1.0 (latest version as of this writing)](https://github.com/christophediericx/ArduinoSketchUploader/releases/download/v3.1.0/ArduinoSketchUploader-3.1.0.zip)
 
-After extracting the Arduino Sketch Uplaoder, flash the hex file to the Arduino Uno via the Windows command line replacing <DownloadPath> with the file path to the location of the hex file:
-* `ArduinoSketchUploader.exe --file=<DownloadPath>brewpi-arduino-uno-revC-0_2_10.hex --model=Uno`
+You need to identify the COM port the Arduino Uno is on, to do this open your _Device Manager_:
+* Start Menu -> Type _Device Manager_.
+* Expand out the _Ports (COM & LPT)_ section and note the number.
+![Arduino COM Port]({{ "img/2018-01-22-brewing-your-own-brewpi/arduino-com-port.jpg" | absolute_url }})
+
+After extracting the Arduino Sketch Uplaoder, flash the hex file to the Arduino Uno via the Windows command line replacing <DownloadPath> with the file path to the location of the hex file and <Number> with the number you found in Device Manager:
+* `ArduinoSketchUploader.exe --file=<DownloadPath>brewpi-arduino-uno-revC-0_2_10.hex --model=UnoR3 --port=COM<Number>`
 
 After the completion dialog box for the Raspbian install on the Raspberry Pi comes up, go ahead and reboot it.  After the Raspberry Pi comes back up, it will auto login to your new install of Raspbian.  Now there are a few basic configuration you are going to want to change to the system before we get started:
 
@@ -98,7 +103,7 @@ For the rest of the Raspberry Pi configuration, I'm going to be using a remote c
 
 ![Bash Prompt]({{ "img/2018-01-22-brewing-your-own-brewpi/ssh-connection.jpg" | absolute_url }})
 * Update your Raspberry Pi (Packages and Firmware)
-1. `sudo apt-get update`
+1. `sudo apt-get update --fix-missing`
 2. `sudo apt-get upgrade`
 3. `sudo apt-get install rpi-update`
 4. `sudo rpi-update`
@@ -110,7 +115,7 @@ For the rest of the Raspberry Pi configuration, I'm going to be using a remote c
 * After it is complete, you can browse to the system and check out the dashboard by going to `http://brewpi` (replace _brewpi_ with what ever you called yours.)
 
 ![Dashboard]({{ "img/2018-01-22-brewing-your-own-brewpi/rpi-dashboard.jpg" | absolute_url }})
-* Thats it for setting up the Raspberry Pi.
+Thats it for setting up the Raspberry Pi!
 
 ---
 
@@ -124,4 +129,12 @@ Next, lets take a look at the general power schematic, The only thing missing fr
 
 If you'd made it this far, congratulations, you're almost done, and its almost time for a beer.  The only thing left to do is to actually configure your BrewPi to talk to the Arduino Uno.
 * First you need to roll back to the legacy version that supports the Arduino Uno
-1. `sudo ~/brewpi-tools/updater.py`
+1. `sudo ~/brewpi-tools/updater.py --ask`
+2. Select the `legacy` branch (option 1).
+3. Confirm your selection with a wack on the enter key!
+4. Select the `legacy` branch for the web interface as well (Option 3 this time).
+5. Wack enter again to confirm.
+6. Say `n` (no) to check for the firmware you already did this with when you flashed the hex file to the Arduino Uno.
+
+Now if you go back to the web interface, in the top right, the script will be _running_ (this may take a few minutes).
+
