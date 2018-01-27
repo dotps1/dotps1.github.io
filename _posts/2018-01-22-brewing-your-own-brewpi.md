@@ -15,13 +15,13 @@ Also, I want to make this clear, the development of the BrewPi over the years ha
 
 ---
 
-### You will be working with electricity while building this project, if your not comfortable with that or don't know what you're doing, do not attempt this build.  Anytime you need to work on the hardware of this system always, always, always unplug it completely.  There will be 110v running inside this circuit.  PROCEED AT YOUR OWN RISK!
+### You will be working with electricity while building this project, if you're not comfortable with that or don't know what you're doing, do not attempt this build.  Anytime you need to work on the hardware of this system always, always, always unplug it completely.  There will be 110v running inside this circuit.  PROCEED AT YOUR OWN RISK!
 
 ---
 
 ### Shopping list
 
-Lets start with a shopping list shall we.  Now, you don't need to buy these via the links I am providing, they are merely for context.  Also, look in your junk drawer, things like the RaspberryPi and Arduino power supply, I found around the house, one was an old phone charger, and the other was to and old light that I hadn't seen in years.  The power cable is from an old computer.  I used some Romex wire that I already had as well.
+Lets start with a shopping list shall we.  Now, you don't need to buy these via the links I am providing, they are merely for context.  Also, look in your junk drawer, things like the RaspberryPi and Arduino power supply I found around the house, one was an old phone charger, and the other was to and old light that I hadn't seen in years.  The power cable is from an old computer.  I used some Romex wire that I already had as well.
 
 * [RaspberryPi 3](https://www.amazon.com/Raspberry-Pi-RASPBERRYPI3-MODB-1GB-Model-Motherboard/dp/B01CD5VC92/ref=sr_1_3?s=pc&ie=UTF8&qid=1516666046&sr=1-3&keywords=raspberry+pi+3)
 * [Arduino Uno](https://www.amazon.com/Compatible-Electronic-ATmega328P-Microcontroller-RoboGets/dp/B01N4LP86I/ref=sr_1_8?ie=UTF8&qid=1516666086&sr=8-8&keywords=arduino+uno)
@@ -67,8 +67,11 @@ You need to identify the COM port the Arduino Uno is on, to do this open your _D
 * Expand out the _Ports (COM & LPT)_ section and note the number.
 ![Arduino COM Port]({{ "img/2018-01-22-brewing-your-own-brewpi/arduino-com-port.jpg" | absolute_url }})
 
-After extracting the Arduino Sketch Uplaoder, flash the hex file to the Arduino Uno via the Windows command line replacing <DownloadPath> with the file path to the location of the hex file and <Number> with the number you found in Device Manager:
+After extracting the Arduino Sketch Uplaoder, flash the hex file to the Arduino Uno via the Windows command line replacing _DownloadPath_ with the file path to the location of the hex file and _Number_ with the number you found in Device Manager:
 * `ArduinoSketchUploader.exe --file=<DownloadPath>brewpi-arduino-uno-revC-0_2_10.hex --model=UnoR3 --port=COM<Number>`
+you'll see a bunch of text go across the screen, just wait until the command prompts comes back, only takes a minute or two.
+
+back to the pi......
 
 After the completion dialog box for the Raspbian install on the Raspberry Pi comes up, go ahead and reboot it.  After the Raspberry Pi comes back up, it will auto login to your new install of Raspbian.  Now there are a few basic configuration you are going to want to change to the system before we get started:
 
@@ -143,5 +146,5 @@ Now if you go back to the web interface, in the top right, the script will be _r
 
 And thats it, you've made your BrewPi!  You can control temperatures via Beer, fridge, or a profile.  So go have some fun!
 
-Here is an IPA I haver fermenting right now:
+Here is an IPA I have fermenting right now:
 ![Currently Fermenting]({{ "img/2018-01-22-brewing-your-own-brewpi/current.jpg" | absolute_url }})
