@@ -138,7 +138,7 @@ If you'd made it this far, congratulations, you're almost done, and its almost t
 
 Now if you go back to the web interface, in the top right, the script will be _running_ (this may take a few minutes).  Now, the only thing left to do is identify and configure your temperature probes and heating/cooling elements, to do this go to the maintenance panel (top right).
 * Your temp probes are going to be on the A4(One Wire) pin.  Your going to have to just hold one in your hand and then wait for the temperature to change on the LCD panel display, and then mark one the _Chamber Temp_ and then the other the _Beer Temp_ (I keep a piece of duct tape around one wire so I can keep track).
-![Temperature Pin Out]("img/2018-01-22-brewing-your-own-brewpi/temp-probe-pin.jpg" | absolute_url)
+![Temperature Pin Out]({{ "img/2018-01-22-brewing-your-own-brewpi/temp-probe-pin.jpg" | absolute_url }})
 * Next mark your heater and cooler controller pin 5 and 6, and be sure to mark both as _Inverted_.  And change the _Function_ to _Chamber Heat_ and _Chamber Cool_.  You'll have to plug something in to see which is which.  You can go to the _Advanced Tab_ and change the mode to _Test Mode_ to help you identify which is which.
 
 And thats it, you've made your BrewPi!  You can control temperatures via Beer, fridge, or a profile.  So go have some fun!
